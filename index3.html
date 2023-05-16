@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     body {
+       text-align: center;
+       padding-top: 50px;
+     }
+ 
+     .image-container {
+       margin-bottom: 20px;
+     }
+ 
+     .image {
+       max-width: 400px;
+     }
+ 
+     .change-button {
+       padding: 10px 20px;
+       font-size: 16px;
+     }
+     .Img{
+          display: none;
+     }
+   </style>
+<body>
+     <button onclick="random()">Click Me</button>
+<div id="myImage1"></div>
+     <!--<input type="text" id="abc">-->
+     <script>
+            function random(){
+               var a = Math.random()*6;
+               var b = Math.round(a);
+               if(b===1){
+                    document.getElementById("myImage1").innerHTML=
+                    '<img src="./pic1.jpg">'}
+                    if(b===2){
+                    document.getElementById("myImage1").innerHTML=
+                    '<img src="./pic2.jpg">'}
+                    if(b===3){
+                    document.getElementById("myImage1").innerHTML=
+                    '<img src="./pic3.jpg">'}
+                    if(b===4){
+                    document.getElementById("myImage1").innerHTML=
+                    '<img src="./pic4.jpg">'}
+                    if(b===5){
+                    document.getElementById("myImage1").innerHTML=
+                    '<img src="./pic5.jpg">'}
+                    if(b===6){
+                    document.getElementById("myImage1").innerHTML=
+                    '<img src="./pic6.jpg">'}
+
+
+               
+
+
+            }
+    
+
+    
+
+
+     </script>
+</body>
+</html>
